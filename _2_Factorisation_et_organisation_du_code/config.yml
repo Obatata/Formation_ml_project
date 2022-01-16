@@ -1,0 +1,86 @@
+# Name of data files
+training_data_file: train.csv
+test_data_file: test.csv
+
+# Pipeline
+pipeline_name: logistic_regression_pipeline
+pipeline_serialized_file: logistic_regression_model
+
+
+# Variables of dataset
+target: HeartDisease
+features:
+  - Age
+  - Sex
+  - ChestPainType
+  - RestingBP
+  - Cholesterol
+  - FastingBS
+  - RestingECG
+  - MaxHR
+  - ExerciseAngina
+  - Oldpeak
+  - ST_Slope
+
+# train and test split param
+test_size: 0.25
+
+# random seed param (very important for production env)
+random_state: 1234
+
+# param for Yeo Johnson transformation data
+lmbda_yeo_johnson: -12.55283001172003
+
+# param for Logistic regression
+C: 1.0
+
+# cateorical variables with nan values
+categorical_variables_with_na_missing:
+  - ST_Slope
+
+categorical_variables_with_na_frequent:
+  - ChestPainType
+
+# numerical variables with nan values
+numerical_variables_with_na:
+  - Cholesterol
+  - MaxHR
+
+# variables for yeo_jhonson  transformation
+numerical_yeao_jhonson_transformation:
+  - RestingBP
+
+# variables to map
+RestingECG_vars:
+  - RestingECG
+
+Sex_vars:
+  - Sex
+
+ExerciseAngina_vars:
+  - ExerciseAngina
+
+# mapping of variables
+map_RestingECG:
+  Missing: 0
+  NA: 0
+  Normal: 1
+  ST: 2
+  LVH: 3
+
+map_Sex:
+  Missing: 0
+  NA: 0
+  M: 1
+  F: 2
+
+map_ExerciseAngina:
+  Missing: 0
+  NA: 0
+  N: 1
+  Y: 2
+
+# variables of one-hot-encoding
+variables_one_hot_encoding:
+  - ChestPainType
+  - ST_Slope
