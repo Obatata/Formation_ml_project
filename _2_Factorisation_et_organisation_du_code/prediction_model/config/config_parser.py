@@ -101,5 +101,3 @@ def parse_config_file() -> AllConfig:
 
 
 configutations = parse_config_file()
-
-print(configutations.modelDataConfig.map_RestingECG)

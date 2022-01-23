@@ -32,4 +32,3 @@ def batch_inference(input_data: pd.DataFrame) -> dict:
             "errors": errors
         }
     return resultats
-
