@@ -5,3 +5,4 @@ sklearn
 pydantic
 feature-engine
 strictyaml
+tox

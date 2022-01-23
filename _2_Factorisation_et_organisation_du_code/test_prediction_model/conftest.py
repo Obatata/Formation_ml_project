@@ -1,4 +1,5 @@
 import pytest
+from pathlib import  Path
 
 from prediction_model.config.config_parser import configutations
 from prediction_model.feature_utils.data_and_pipeline_manager import\
@@ -31,3 +32,7 @@ def pipeline_heart():
     serialized_pipeline_name = \
         f"{configutations.app_config.pipeline_serialized_file}.pkl"
     return load_pipeline(file_name=serialized_pipeline_name)
+
+@pytest.fixture()
+def dir_config():
+    return Path(__file__).parent.parent / "config.yml"

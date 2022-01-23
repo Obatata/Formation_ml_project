@@ -36,6 +36,9 @@ class MdelDataConfig(BaseModel):
     random_state: int
     lmbda_yeo_johnson: float
     C: float
+    lr_penality: str
+    solver: str
+    lr_solvers: List[str]
     categorical_variables_with_na_missing: List[str]
     categorical_variables_with_na_frequent: List[str]
     numerical_variables_with_na: List[str]
@@ -71,7 +74,7 @@ def check_config_file() -> Path:
                     "n'éxiste pas ! ".format(CONFIG_FILE_PATH))
 
 
-def parse_config_yml() -> YAML:
+def lire_config_yml(cfg_path: Path = None) -> YAML:
     """
     check confgi path
     load config path if exist
@@ -85,14 +88,14 @@ def parse_config_yml() -> YAML:
     raise Exception("file {} doest not existe".format(cfg_path))
 
 
-def parse_config_file() -> AllConfig:
+def parse_config_file(parsed_config: YAML = None) -> AllConfig:
     """
     read and get config file
     get configs from the config file
 
     :return: configs (app and modelData)
     """
-    parsed_config = parse_config_yml()
+    parsed_config = lire_config_yml()
     configs_project = AllConfig(
         app_config=AppConfig(**parsed_config.data),
         modelDataConfig=MdelDataConfig(**parsed_config.data)

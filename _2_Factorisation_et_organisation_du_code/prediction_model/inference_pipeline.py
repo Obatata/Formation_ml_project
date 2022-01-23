@@ -1,5 +1,3 @@
-from numpy import inexact
-
 from prediction_model.config.config_parser import configutations
 import pandas as pd
 from prediction_model.feature_utils.data_and_pipeline_manager \
@@ -12,6 +10,7 @@ serialized_pipeline_name = \
     f"{configutations.app_config.pipeline_serialized_file}.pkl"
 heart_classification_pipeline = \
     load_pipeline(file_name=serialized_pipeline_name)
+
 
 def batch_inference(input_data: pd.DataFrame) -> dict:
     """

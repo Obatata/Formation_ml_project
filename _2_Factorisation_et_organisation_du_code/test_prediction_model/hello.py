@@ -29,6 +29,17 @@ if __name__ == "__main__":
     heart_classification_pipeline = \
         load_pipeline(file_name=serialized_pipeline_name)
 
+    from pathlib import Path
+    from strictyaml import load, YAML
+    print("path")
+    cfg_path = Path(__file__).parent.parent / "config.yml"
+    if cfg_path.is_file():
+        with open(cfg_path, "r") as config_file:
+            parsed_file = load(config_file.read())
+            print(parsed_file.data)
+
+
+
     print(heart_classification_pipeline)
     data = input_data()
     y_prediction = heart_classification_pipeline.predict(data[configutations.modelDataConfig.features])

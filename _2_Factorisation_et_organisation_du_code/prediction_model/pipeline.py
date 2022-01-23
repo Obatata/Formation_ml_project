@@ -110,7 +110,8 @@ heart_disease_pipe = Pipeline(
             (
                "logistic_regression_binaire",
                 LogisticRegression(
-                    C=configutations.modelDataConfig.C
+                    C=configutations.modelDataConfig.C,
+                    solver=configutations.modelDataConfig.solver
                 )
             )
     ]

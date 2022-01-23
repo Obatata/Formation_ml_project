@@ -34,6 +34,15 @@ lmbda_yeo_johnson: -12.55283001172003
 # param for Logistic regression
 C: 1.0
 
+lr_penality: l2
+
+solver: newton-cg
+
+lr_solvers:
+  - newton-cg
+  - lbfgs
+  - saga
+
 # cateorical variables with nan values
 categorical_variables_with_na_missing:
   - ST_Slope
