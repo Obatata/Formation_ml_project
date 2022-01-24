@@ -1,0 +1,8 @@
+pandas
+numpy
+joblib
+sklearn
+pydantic
+feature-engine
+strictyaml
+tox
