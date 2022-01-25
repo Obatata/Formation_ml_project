@@ -1,116 +1,37 @@
 action: GLOB, msg: packaging
-cwd: C:\Users\obatata\DataspellProjects\Formation_ml_project\_2_Factorisation_et_organisation_du_code
-cmd: 'C:\Users\obatata\Anaconda3\python.exe' setup.py sdist --formats=zip --dist-dir '.tox\dist'
+cwd: C:\Users\oussama.batata\DataspellProjects\formation_ml_project\_3_service_api_model_code
+cmd: 'c:\users\oussama.batata\appdata\local\continuum\anaconda3\python.exe' setup.py sdist --formats=zip --dist-dir '.tox\dist'
 running sdist
 running egg_info
-writing heart_classification_model_20.egg-info\PKG-INFO
-writing dependency_links to heart_classification_model_20.egg-info\dependency_links.txt
-writing requirements to heart_classification_model_20.egg-info\requires.txt
-writing top-level names to heart_classification_model_20.egg-info\top_level.txt
-reading manifest file 'heart_classification_model_20.egg-info\SOURCES.txt'
-reading manifest template 'MANIFEST.in'
-warning: no files found matching '*.txt'
-warning: no files found matching '*.md'
-warning: no files found matching '*.pkl'
-warning: manifest_maker: MANIFEST.in, line 4: 'recursive-include' expects <dir> <pattern1> <pattern2> ...
-
-warning: no files found matching 'prediction_model\trained_models\*.pkl'
-warning: no files found matching 'prediction_model\config.yml'
-warning: no previously-included files found matching '*.log'
-warning: no previously-included files found matching '*.cfg'
-warning: no previously-included files matching '__pycache__' found under directory '*'
-warning: no previously-included files matching '*.py[co]' found under directory '*'
-writing manifest file 'heart_classification_model_20.egg-info\SOURCES.txt'
+writing heart_disease_classification.egg-info\PKG-INFO
+writing dependency_links to heart_disease_classification.egg-info\dependency_links.txt
+writing top-level names to heart_disease_classification.egg-info\top_level.txt
+reading manifest file 'heart_disease_classification.egg-info\SOURCES.txt'
+writing manifest file 'heart_disease_classification.egg-info\SOURCES.txt'
 warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
 
 running check
-creating heart-classification-model_20-1.0.0
-creating heart-classification-model_20-1.0.0\heart_classification_model_20.egg-info
-creating heart-classification-model_20-1.0.0\prediction_model
-creating heart-classification-model_20-1.0.0\prediction_model\config
-creating heart-classification-model_20-1.0.0\prediction_model\datasets
-creating heart-classification-model_20-1.0.0\prediction_model\feature_utils
-creating heart-classification-model_20-1.0.0\prediction_model\serialized_models
-creating heart-classification-model_20-1.0.0\requirements
-creating heart-classification-model_20-1.0.0\test_prediction_model
-copying files to heart-classification-model_20-1.0.0...
-copying MANIFEST.in -> heart-classification-model_20-1.0.0
-copying pyproject.toml -> heart-classification-model_20-1.0.0
-copying setup.py -> heart-classification-model_20-1.0.0
-copying heart_classification_model_20.egg-info\PKG-INFO -> heart-classification-model_20-1.0.0\heart_classification_model_20.egg-info
-copying heart_classification_model_20.egg-info\SOURCES.txt -> heart-classification-model_20-1.0.0\heart_classification_model_20.egg-info
-copying heart_classification_model_20.egg-info\dependency_links.txt -> heart-classification-model_20-1.0.0\heart_classification_model_20.egg-info
-copying heart_classification_model_20.egg-info\requires.txt -> heart-classification-model_20-1.0.0\heart_classification_model_20.egg-info
-copying heart_classification_model_20.egg-info\top_level.txt -> heart-classification-model_20-1.0.0\heart_classification_model_20.egg-info
-copying prediction_model\__init__.py -> heart-classification-model_20-1.0.0\prediction_model
-copying prediction_model\inference_pipeline.py -> heart-classification-model_20-1.0.0\prediction_model
-copying prediction_model\interpret_predictions.py -> heart-classification-model_20-1.0.0\prediction_model
-copying prediction_model\optimize_pipeline.py -> heart-classification-model_20-1.0.0\prediction_model
-copying prediction_model\pipeline.py -> heart-classification-model_20-1.0.0\prediction_model
-copying prediction_model\train_pipeline.py -> heart-classification-model_20-1.0.0\prediction_model
-copying prediction_model\config\__init__.py -> heart-classification-model_20-1.0.0\prediction_model\config
-copying prediction_model\config\config_parser.py -> heart-classification-model_20-1.0.0\prediction_model\config
-copying prediction_model\datasets\__init__.py -> heart-classification-model_20-1.0.0\prediction_model\datasets
-copying prediction_model\datasets\test.csv -> heart-classification-model_20-1.0.0\prediction_model\datasets
-copying prediction_model\datasets\test.py -> heart-classification-model_20-1.0.0\prediction_model\datasets
-copying prediction_model\datasets\train.csv -> heart-classification-model_20-1.0.0\prediction_model\datasets
-copying prediction_model\feature_utils\__init__.py -> heart-classification-model_20-1.0.0\prediction_model\feature_utils
-copying prediction_model\feature_utils\data_and_pipeline_manager.py -> heart-classification-model_20-1.0.0\prediction_model\feature_utils
-copying prediction_model\feature_utils\data_and_type_validator.py -> heart-classification-model_20-1.0.0\prediction_model\feature_utils
-copying prediction_model\feature_utils\features_encoding_data.py -> heart-classification-model_20-1.0.0\prediction_model\feature_utils
-copying prediction_model\serialized_models\__init__.py -> heart-classification-model_20-1.0.0\prediction_model\serialized_models
-copying requirements\requirements.txt -> heart-classification-model_20-1.0.0\requirements
-copying requirements\test_requirements.txt -> heart-classification-model_20-1.0.0\requirements
-copying test_prediction_model\__init__.py -> heart-classification-model_20-1.0.0\test_prediction_model
-copying test_prediction_model\conftest.py -> heart-classification-model_20-1.0.0\test_prediction_model
-copying test_prediction_model\hello.py -> heart-classification-model_20-1.0.0\test_prediction_model
-copying test_prediction_model\test_config.py -> heart-classification-model_20-1.0.0\test_prediction_model
-copying test_prediction_model\test_performance_model.py -> heart-classification-model_20-1.0.0\test_prediction_model
-copying test_prediction_model\test_presprocess_data.py -> heart-classification-model_20-1.0.0\test_prediction_model
-Writing heart-classification-model_20-1.0.0\setup.cfg
-creating '.tox\dist\heart-classification-model_20-1.0.0.zip' and adding 'heart-classification-model_20-1.0.0' to it
-adding 'heart-classification-model_20-1.0.0'
-adding 'heart-classification-model_20-1.0.0\heart_classification_model_20.egg-info'
-adding 'heart-classification-model_20-1.0.0\prediction_model'
-adding 'heart-classification-model_20-1.0.0\requirements'
-adding 'heart-classification-model_20-1.0.0\test_prediction_model'
-adding 'heart-classification-model_20-1.0.0\MANIFEST.in'
-adding 'heart-classification-model_20-1.0.0\PKG-INFO'
-adding 'heart-classification-model_20-1.0.0\pyproject.toml'
-adding 'heart-classification-model_20-1.0.0\setup.cfg'
-adding 'heart-classification-model_20-1.0.0\setup.py'
-adding 'heart-classification-model_20-1.0.0\heart_classification_model_20.egg-info\dependency_links.txt'
-adding 'heart-classification-model_20-1.0.0\heart_classification_model_20.egg-info\PKG-INFO'
-adding 'heart-classification-model_20-1.0.0\heart_classification_model_20.egg-info\requires.txt'
-adding 'heart-classification-model_20-1.0.0\heart_classification_model_20.egg-info\SOURCES.txt'
-adding 'heart-classification-model_20-1.0.0\heart_classification_model_20.egg-info\top_level.txt'
-adding 'heart-classification-model_20-1.0.0\prediction_model\config'
-adding 'heart-classification-model_20-1.0.0\prediction_model\datasets'
-adding 'heart-classification-model_20-1.0.0\prediction_model\feature_utils'
-adding 'heart-classification-model_20-1.0.0\prediction_model\serialized_models'
-adding 'heart-classification-model_20-1.0.0\prediction_model\inference_pipeline.py'
-adding 'heart-classification-model_20-1.0.0\prediction_model\interpret_predictions.py'
-adding 'heart-classification-model_20-1.0.0\prediction_model\optimize_pipeline.py'
-adding 'heart-classification-model_20-1.0.0\prediction_model\pipeline.py'
-adding 'heart-classification-model_20-1.0.0\prediction_model\train_pipeline.py'
-adding 'heart-classification-model_20-1.0.0\prediction_model\__init__.py'
-adding 'heart-classification-model_20-1.0.0\prediction_model\config\config_parser.py'
-adding 'heart-classification-model_20-1.0.0\prediction_model\config\__init__.py'
-adding 'heart-classification-model_20-1.0.0\prediction_model\datasets\test.csv'
-adding 'heart-classification-model_20-1.0.0\prediction_model\datasets\test.py'
-adding 'heart-classification-model_20-1.0.0\prediction_model\datasets\train.csv'
-adding 'heart-classification-model_20-1.0.0\prediction_model\datasets\__init__.py'
-adding 'heart-classification-model_20-1.0.0\prediction_model\feature_utils\data_and_pipeline_manager.py'
-adding 'heart-classification-model_20-1.0.0\prediction_model\feature_utils\data_and_type_validator.py'
-adding 'heart-classification-model_20-1.0.0\prediction_model\feature_utils\features_encoding_data.py'
-adding 'heart-classification-model_20-1.0.0\prediction_model\feature_utils\__init__.py'
-adding 'heart-classification-model_20-1.0.0\prediction_model\serialized_models\__init__.py'
-adding 'heart-classification-model_20-1.0.0\requirements\requirements.txt'
-adding 'heart-classification-model_20-1.0.0\requirements\test_requirements.txt'
-adding 'heart-classification-model_20-1.0.0\test_prediction_model\conftest.py'
-adding 'heart-classification-model_20-1.0.0\test_prediction_model\hello.py'
-adding 'heart-classification-model_20-1.0.0\test_prediction_model\test_config.py'
-adding 'heart-classification-model_20-1.0.0\test_prediction_model\test_performance_model.py'
-adding 'heart-classification-model_20-1.0.0\test_prediction_model\test_presprocess_data.py'
-adding 'heart-classification-model_20-1.0.0\test_prediction_model\__init__.py'
-removing 'heart-classification-model_20-1.0.0' (and everything under it)
+warning: check: missing required meta-data: url
+
+warning: check: missing meta-data: either (author and author_email) or (maintainer and maintainer_email) must be supplied
+
+creating heart_disease_classification-1.0.0
+creating heart_disease_classification-1.0.0\heart_disease_classification.egg-info
+copying files to heart_disease_classification-1.0.0...
+copying setup.py -> heart_disease_classification-1.0.0
+copying heart_disease_classification.egg-info\PKG-INFO -> heart_disease_classification-1.0.0\heart_disease_classification.egg-info
+copying heart_disease_classification.egg-info\SOURCES.txt -> heart_disease_classification-1.0.0\heart_disease_classification.egg-info
+copying heart_disease_classification.egg-info\dependency_links.txt -> heart_disease_classification-1.0.0\heart_disease_classification.egg-info
+copying heart_disease_classification.egg-info\top_level.txt -> heart_disease_classification-1.0.0\heart_disease_classification.egg-info
+Writing heart_disease_classification-1.0.0\setup.cfg
+creating '.tox\dist\heart_disease_classification-1.0.0.zip' and adding 'heart_disease_classification-1.0.0' to it
+adding 'heart_disease_classification-1.0.0'
+adding 'heart_disease_classification-1.0.0\heart_disease_classification.egg-info'
+adding 'heart_disease_classification-1.0.0\PKG-INFO'
+adding 'heart_disease_classification-1.0.0\setup.cfg'
+adding 'heart_disease_classification-1.0.0\setup.py'
+adding 'heart_disease_classification-1.0.0\heart_disease_classification.egg-info\dependency_links.txt'
+adding 'heart_disease_classification-1.0.0\heart_disease_classification.egg-info\PKG-INFO'
+adding 'heart_disease_classification-1.0.0\heart_disease_classification.egg-info\SOURCES.txt'
+adding 'heart_disease_classification-1.0.0\heart_disease_classification.egg-info\top_level.txt'
+removing 'heart_disease_classification-1.0.0' (and everything under it)

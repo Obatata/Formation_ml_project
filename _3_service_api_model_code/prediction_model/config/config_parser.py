@@ -94,7 +94,7 @@ def parse_config_file(parsed_config: YAML = None) -> AllConfig:
     read and get config file
     get configs from the config file
 
-    :return: configs (app and modelData)
+    :return: configs (api_schemas and modelData)
     """
     parsed_config = lire_config_yml()
     configs_project = AllConfig(

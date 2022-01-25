@@ -1,31 +1,0 @@
-Collecting package metadata (current_repodata.json): ...working... done
-Solving environment: ...working... done
-
-## Package Plan ##
-
-  environment location: C:\Users\obatata\Anaconda3
-
-  added / updated specs:
-    - rfc3986
-
-
-The following packages will be downloaded:
-
-    package                    |            build
-    ---------------------------|-----------------
-    rfc3986-1.4.0              |     pyhd3eb1b0_0          34 KB
-    ------------------------------------------------------------
-                                           Total:          34 KB
-
-The following NEW packages will be INSTALLED:
-
-  rfc3986            pkgs/main/noarch::rfc3986-1.4.0-pyhd3eb1b0_0
-
-
-Proceed ([y]/n)? 
-
-Downloading and Extracting Packages
-rfc3986-1.4.0        | 34 KB     |            |   0% rfc3986-1.4.0        | 34 KB     | ####6      |  46% rfc3986-1.4.0        | 34 KB     | ########## | 100% rfc3986-1.4.0        | 34 KB     | ########## | 100% 
-Preparing transaction: ...working... done
-Verifying transaction: ...working... done
-Executing transaction: ...working... done
